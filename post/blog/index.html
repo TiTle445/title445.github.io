@@ -1,0 +1,212 @@
+<!doctype html>
+<html lang="en-us">
+  <head>
+    <title>Blog // My New Hugo Site</title>
+    <link rel="shortcut icon" href="/favicon.ico" />
+    <meta charset="utf-8" />
+    <meta name="generator" content="Hugo 0.92.2" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="author" content="John Doe" />
+    <meta name="description" content="" />
+    <link rel="stylesheet" href="https://title445.github.io/css/main.min.88e7083eff65effb7485b6e6f38d10afbec25093a6fac42d734ce9024d3defbd.css" />
+
+    
+    <meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Blog"/>
+<meta name="twitter:description" content="支付宝沙箱扫码支付简易使用
+  登陆支付宝沙箱环境
+  设置环境 (1)	启用密钥
+  查看扫码api接口 (1)	本教程使用下图两个api实现扫码支付
+  接口调用前提 ①　依赖导入
+  ④　下载沙箱版支付宝（只有Android版）
+下载并登陆 沙箱账号密码在
+接口调用顺序说明（看看就好） ①　调用交易预创建接口（alipay.trade.precreate）    请求参数
+  目的：获得响应参数中qr_code的值用于生成支付的二维码
+   请求参数 ①的请求参数out_trade_out
+  目的：获得响应参数trade_status用于查询本次交易的支付状态（成功、失败、取消等），其他返回值自己使用
+    实现扫码支付（在Junit里测试） ①　代码 @Test public void qrCode(){ System.out.println(&quot;==================订单预创建，获得二维码链接====================&quot;); AlipayClient alipayClient = AlipayUtil.getAlipayClient(); //获得初始化的AlipayClient AlipayTradePrecreateRequest request = new AlipayTradePrecreateRequest (); //创建API对应的request类
+String outTradeNo = new Date()."/>
+
+    <meta property="og:title" content="Blog" />
+<meta property="og:description" content="支付宝沙箱扫码支付简易使用
+  登陆支付宝沙箱环境
+  设置环境 (1)	启用密钥
+  查看扫码api接口 (1)	本教程使用下图两个api实现扫码支付
+  接口调用前提 ①　依赖导入
+  ④　下载沙箱版支付宝（只有Android版）
+下载并登陆 沙箱账号密码在
+接口调用顺序说明（看看就好） ①　调用交易预创建接口（alipay.trade.precreate）    请求参数
+  目的：获得响应参数中qr_code的值用于生成支付的二维码
+   请求参数 ①的请求参数out_trade_out
+  目的：获得响应参数trade_status用于查询本次交易的支付状态（成功、失败、取消等），其他返回值自己使用
+    实现扫码支付（在Junit里测试） ①　代码 @Test public void qrCode(){ System.out.println(&quot;==================订单预创建，获得二维码链接====================&quot;); AlipayClient alipayClient = AlipayUtil.getAlipayClient(); //获得初始化的AlipayClient AlipayTradePrecreateRequest request = new AlipayTradePrecreateRequest (); //创建API对应的request类
+String outTradeNo = new Date()." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://title445.github.io/post/blog/" /><meta property="article:section" content="post" />
+<meta property="article:published_time" content="2022-02-24T20:13:18+08:00" />
+<meta property="article:modified_time" content="2022-02-24T20:13:18+08:00" />
+
+
+
+  </head>
+  <body>
+    <header class="app-header">
+      <a href="https://title445.github.io/"><img class="app-header-avatar" src="/avatar.jpg" alt="John Doe" /></a>
+      <h1>My New Hugo Site</h1>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vehicula turpis sit amet elit pretium.</p>
+    </header>
+    <main class="app-container">
+      
+  <article class="post">
+    <header class="post-header">
+      <h1 class ="post-title">Blog</h1>
+      <div class="post-meta">
+        <div>
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-calendar">
+  <title>calendar</title>
+  <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line>
+</svg>
+          Feb 24, 2022
+        </div>
+        <div>
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-clock">
+  <title>clock</title>
+  <circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline>
+</svg>
+          1 min read
+        </div>
+      </div>
+    </header>
+    <div class="post-content">
+      <p>支付宝沙箱扫码支付简易使用</p>
+<ol>
+<li>
+<p>登陆支付宝沙箱环境</p>
+</li>
+<li>
+<p>设置环境
+(1)	启用密钥</p>
+</li>
+<li>
+<p>查看扫码api接口
+(1)	本教程使用下图两个api实现扫码支付</p>
+</li>
+<li>
+<p>接口调用前提
+①　依赖导入</p>
+</li>
+</ol>
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<p>④　下载沙箱版支付宝（只有Android版）</p>
+<p>下载并登陆
+沙箱账号密码在</p>
+<ol start="5">
+<li>接口调用顺序说明（看看就好）
+①　调用交易预创建接口（alipay.trade.precreate）</li>
+</ol>
+<ol>
+<li>
+<p>请求参数</p>
+</li>
+<li>
+<p>目的：获得响应参数中qr_code的值用于生成支付的二维码</p>
+</li>
+<li></li>
+<li>
+<p>请求参数
+①的请求参数out_trade_out</p>
+</li>
+<li>
+<p>目的：获得响应参数trade_status用于查询本次交易的支付状态（成功、失败、取消等），其他返回值自己使用</p>
+</li>
+<li></li>
+</ol>
+<ol start="6">
+<li>
+<p>实现扫码支付（在Junit里测试）
+①　代码
+@Test
+public void qrCode(){
+System.out.println(&quot;==================订单预创建，获得二维码链接====================&quot;);
+AlipayClient alipayClient = AlipayUtil.getAlipayClient();  //获得初始化的AlipayClient
+AlipayTradePrecreateRequest request = new AlipayTradePrecreateRequest (); //创建API对应的request类</p>
+<pre><code>String outTradeNo = new Date().getTime()+&quot;xianmiao&quot;;//商户订单编号，这里使用时间戳
+
+JSONObject bizContent = new JSONObject();
+bizContent.put(&quot;out_trade_no&quot;, outTradeNo);//商户订单号，自定义
+bizContent.put(&quot;total_amount&quot;, 3.5);//付款金额
+bizContent.put(&quot;subject&quot;, &quot;百事可乐200ml&quot;);//商品名称
+</code></pre>
+</li>
+</ol>
+<p>//        bizContent.put(&ldquo;store_id&rdquo;, &ldquo;鲜喵货柜_001&rdquo;);//商家id，可以没有
+bizContent.put(&ldquo;timeout_express&rdquo;, &ldquo;90m&rdquo;);//超时时间
+//传入参数
+request.setBizContent ( bizContent.toString() ); //订单允许的最晚付款时间
+AlipayTradePrecreateResponse response = null;
+try {
+response = alipayClient.execute (request);//执行预创建
+} catch (AlipayApiException e) {
+e.printStackTrace();
+}
+String respBody = response.getBody();
+//        System.out.println(respBody);
+//转json对象
+JSONObject jsonBodyObject = JSONObject.parseObject(respBody);
+JSONObject respObject = JSONObject.parseObject(jsonBodyObject.get(&ldquo;alipay_trade_precreate_response&rdquo;).toString());</p>
+<pre><code>    //取出二维码地址，返回给前端使用二维码生成器生成二维码
+    String qrCode = (String) respObject.get(&quot;qr_code&quot;);
+    System.out.println(&quot;生成的二维码链接：&quot;+qrCode);
+    //其他业务
+}
+</code></pre>
+<p>②　运行结果</p>
+<p>③　将这个链接复制到二维码工具（传到前端则使用vue生成二维码）</p>
+<p>④　生成二维码后使用沙箱支付宝扫一扫</p>
+<p>支付密码</p>
+<ol start="7">
+<li>
+<p>订单支付状态获取
+注意：传入的out_trade__no与预创建中的一致，可以到6.2的输出结果中赋值
+①　代码</p>
+<p>@Test
+public void queryPayStatus(){
+System.out.println(&quot;==================查询支付状态====================&quot;);
+AlipayClient alipayClient = AlipayUtil.getAlipayClient();
+AlipayTradeQueryRequest request = new AlipayTradeQueryRequest();
+JSONObject bizContent = new JSONObject();
+//设置查询订单的商号
+bizContent.put(&ldquo;out_trade_no&rdquo;, &ldquo;1631425172997xianmiao&rdquo;);
+//        bizContent.put(&ldquo;trade_no&rdquo;,tradeNo);
+request.setBizContent(bizContent.toString());
+AlipayTradeQueryResponse response = null;
+try {
+response = alipayClient.execute(request);
+} catch (AlipayApiException e) {
+e.printStackTrace();
+}
+String respBody = response.getBody();
+//        System.out.println(respBody);
+//转json对象
+JSONObject jsonBodyObject = JSONObject.parseObject(respBody);
+JSONObject respObject = JSONObject.parseObject(jsonBodyObject.get(&ldquo;alipay_trade_query_response&rdquo;).toString());
+System.out.println(&ldquo;订单状态：&quot;+respObject.get(&ldquo;trade_status&rdquo;));
+}</p>
+</li>
+</ol>
+<p>②　结果</p>
+<p>响应说明</p>
+<ol start="8">
+<li>By鲜喵</li>
+</ol>
+
+    </div>
+    <div class="post-footer">
+      
+    </div>
+  </article>
+
+    </main>
+  </body>
+</html>
