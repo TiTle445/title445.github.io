@@ -8,24 +8,17 @@
     <language>en-us</language>
     <lastBuildDate>Thu, 24 Feb 2022 20:13:18 +0800</lastBuildDate><atom:link href="https://title445.github.io/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Blog</title>
+      <title>支付宝沙箱的使用</title>
       <link>https://title445.github.io/post/blog/</link>
       <pubDate>Thu, 24 Feb 2022 20:13:18 +0800</pubDate>
       
       <guid>https://title445.github.io/post/blog/</guid>
-      <description>支付宝沙箱扫码支付简易使用
-  登陆支付宝沙箱环境
-  设置环境 (1)	启用密钥
-  查看扫码api接口 (1)	本教程使用下图两个api实现扫码支付
-  接口调用前提 ①　依赖导入
-  ④　下载沙箱版支付宝（只有Android版）
-下载并登陆 沙箱账号密码在
-接口调用顺序说明（看看就好） ①　调用交易预创建接口（alipay.trade.precreate）    请求参数
-  目的：获得响应参数中qr_code的值用于生成支付的二维码
-   请求参数 ①的请求参数out_trade_out
-  目的：获得响应参数trade_status用于查询本次交易的支付状态（成功、失败、取消等），其他返回值自己使用
-    实现扫码支付（在Junit里测试） ①　代码 @Test public void qrCode(){ System.out.println(&amp;quot;==================订单预创建，获得二维码链接====================&amp;quot;); AlipayClient alipayClient = AlipayUtil.getAlipayClient(); //获得初始化的AlipayClient AlipayTradePrecreateRequest request = new AlipayTradePrecreateRequest (); //创建API对应的request类
-String outTradeNo = new Date().</description>
+      <description>支付宝沙箱扫码支付的使用
+1. 登陆支付宝沙箱环境 2. 设置环境 (1) 启用密钥
+3. 查看扫码api接口 (1) 本教程使用下图两个api实现扫码支付
+线下交易预创建
+线下交易支付查询
+4. 接口调用前提 ①　依赖导入 com.alibabafastjson1.2.76com.alipay.sdk​ alipay-sdk-java4.16.41.ALL②　创建支付请求客户端的工具类AlipayUtil public class AlipayUtil { public static final String PRIVATE_KEY =; public static final String PUBLIC_KEY =; public static final String APP_ID = ; public static final String DEV_SERVER_API = &amp;quot;https://openapi.alipaydev.com/gateway.do&amp;quot;; public static final String FORMAT = &amp;quot;json&amp;quot;; public static final String CHARSET = &amp;quot;utf-8&amp;quot;; public static final String SIGN_TYPE = &amp;quot;RSA2&amp;quot;; private static volatile AlipayClient alipayClient = null; private AlipayUtil(){ } public static AlipayClient getAlipayClient(){ if (alipayClient==null){ synchronized (AlipayUtil.</description>
     </item>
     
   </channel>
